@@ -1,0 +1,62 @@
+.vercel
+*.log
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Environments 
+.env 
+.venv 
+env/ 
+venv/ 
+ENV/ 
+env.bak/ 
+venv.bak/ 
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+*.sqlite3
+
+# Virtual environment
+.env/
+venv/
+env/
+ENV/
+
+# Local development settings
+local_settings.py
+
+# IDE settings (example for Visual Studio Code)
+.vscode/
+*.code-workspace
+
+# macOS system files
+.DS_Store
+
+# Compiled Python files
+*.pyc
+
+# Logs
+logs/
+*.log
+
+# Database
+*.sqlite3
+
+# Secret keys
+*.key
+
+# Temporary files
+*.tmp
+
+
+# Django migration files
+*/migrations/
+
+# Other
+.DS_Store
