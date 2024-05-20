@@ -58,7 +58,7 @@ def index(request):
                 <h1>Welcome to Cinemathe DRF Backend</h1>
                 <p>This backend manages user authentication and registration for the Cinemathe app.</p>
                 <p>Please visit the <a href="https://cinemathe-drf.vercel.app/admin">Django Admin panel</a> for backend management.</p>
-                <p>For the frontend, visit <a href="https://cinemathe.netlify.app">Cinemathe</a>.</p>
+                <p>For the frontend, visit <a href="https://cinemathe.space">Cinemathe</a>.</p>
             </div>
         </body>
     </html>

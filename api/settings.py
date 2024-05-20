@@ -38,7 +38,7 @@ LOGOUT_URL = '/logout/'
 LOGOUT_REDIRECT_URL = '/login/'
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000', 'https://cinemathe.netlify.app', 'https://es--cinemathe.netlify.app'
+    'http://localhost:3000', 'https://cinemathe.netlify.app', 'https://es--cinemathe.netlify.app', 'https://cinemathe.space','https://es.cinemathe.space'
 ]
 
 
