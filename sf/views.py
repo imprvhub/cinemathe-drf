@@ -13,10 +13,10 @@ from django.http import HttpResponse
 
 def index(request):
     """
-    Displays an HTML page indicating the backend setup for SonarFlix.
+    Displays an HTML page indicating the backend setup for Cinemathe.
 
     This function generates an HTML page with a heading and a paragraph indicating
-    the backend setup for SonarFlix, along with the current time.
+    the backend setup for Cinemathe, along with the current time.
 
     Parameters:
     request (HttpRequest): The HTTP request object.
@@ -27,7 +27,7 @@ def index(request):
     html = f'''
     <html>
         <head>
-            <title>SonarFlix - Django Rest Framework Backend</title>
+            <title>Cinemathe - Django Rest Framework Backend</title>
             <style>
                 body {{
                     font-family: Arial, sans-serif;
@@ -55,10 +55,10 @@ def index(request):
         </head>
         <body>
             <div class="container">
-                <h1>Welcome to SonarFlix DRF Backend</h1>
-                <p>This backend manages user authentication and registration for the SonarFlix app.</p>
+                <h1>Welcome to Cinemathe DRF Backend</h1>
+                <p>This backend manages user authentication and registration for the Cinemathe app.</p>
                 <p>Please visit the <a href="https://sf-django.vercel.app/admin">Django Admin panel</a> for backend management.</p>
-                <p>For the frontend, visit <a href="https://sonarflix.netlify.app">SonarFlix</a>.</p>
+                <p>For the frontend, visit <a href="https://cinemathe.netlify.app">Cinemathe</a>.</p>
             </div>
         </body>
     </html>
