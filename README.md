@@ -1,16 +1,17 @@
 # Cinemathe-DRF Backend v0.1.0
 
-**Welcome to the Cinemathe Backend Project**
 
-**Note**
-This project is an initial implementation and is currently under maintenance.
+### Welcome to the Cinemathe Backend Project 
+
+> [!TIP]
+> For Frontend repository click [here](https://github.com/imprvhub/cinemathe).
 
 ## Overview
 Cinemathe is a work-in-progress project aimed at fast-tracking your entertainment picks. This initial release is an implementation of a Django Rest Framework (DRF) based backend that supports the Vue.js frontend application. The backend is designed to provide robust and scalable APIs for querying and managing movies and TV series data, with a primary focus on user authentication.
 
 ## Implementation Details
 - **Framework**: Django Rest Framework (DRF)
-- **Hosting**: Netlify (Frontend), DigitalOcean Spaces (Backend static files)
+- **Hosting**: Netlify (Frontend), Vercel (Backend static files)
 - **APIs Used**: TMDB, JustWatch
 - **Frontend Integration**: Vue.js application deployed on Netlify
 
@@ -27,7 +28,7 @@ Cinemathe is a work-in-progress project aimed at fast-tracking your entertainmen
 The backend development is now complete and fully integrated with the frontend.
 
 ## Demo
-For a demo of the frontend application, check out the current state of Cinemathe [here](#).
+For a demo of the frontend application, check out the current state of Cinemathe [here](https://cinemathe.space).
 
 ## Notes
 This project is currently under maintenance. For the latest updates and changes, refer to the Full Changelog.
