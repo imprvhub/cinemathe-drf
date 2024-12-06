@@ -4,7 +4,7 @@ django-appconf==1.0.6
 django-avatar==8.0.0
 django-cors-headers==4.3.1
 django-rest-auth==0.9.5
-djangorestframework==3.15.1
+djangorestframework==3.15.2
 djangorestframework-simplejwt==5.3.1
 dnspython==2.6.1
 pillow==10.3.0
