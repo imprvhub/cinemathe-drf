@@ -25,33 +25,33 @@ def index(request):
     Returns:
     HttpResponse: An HTTP response with the generated HTML page.
     """
-    html = f'''
+    html = '''
     <html>
         <head>
             <title>Cinemathe - Django Rest Framework Backend</title>
             <style>
-                body {{
+                body {
                     font-family: Arial, sans-serif;
                     margin: 0;
                     padding: 0;
                     background-color: #f0f0f0;
-                }}
-                .container {{
+                }
+                .container {
                     max-width: 800px;
                     margin: 50px auto;
                     padding: 20px;
                     background-color: #fff;
                     border-radius: 5px;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                }}
-                h1 {{
+                }
+                h1 {
                     color: #333;
                     text-align: center;
-                }}
-                p {{
+                }
+                p {
                     color: #666;
                     text-align: center;
-                }}
+                }
             </style>
         </head>
         <body>
