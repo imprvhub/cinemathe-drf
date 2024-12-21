@@ -10,6 +10,7 @@ from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
 from .serializers import UserSerializer
 from django.http import HttpResponse
+from .models import UserRegistrationLog, UserLoginLog
 
 def index(request):
     """
@@ -76,6 +77,7 @@ def register_user(request):
         user.first_name = name
 
         user.save()
+        UserRegistrationLog.objects.create(email=email)
 
         serializer = UserSerializer(user) 
 
@@ -90,25 +92,34 @@ def register_user(request):
 @api_view(['GET', 'POST'])
 def login_user(request):
     if request.method == 'POST':
-        print("POST request received.") 
         email = request.data.get('email')
         password = request.data.get('password')
 
         user = authenticate(username=email, password=password)
-        if user is not None:
-            login(request, user) 
+        success = user is not None
+
+        UserLoginLog.objects.create(
+            email=email,
+            success=success
+        )
+
+        if success:
+            login(request, user)
             refresh = RefreshToken.for_user(user)
             user_name = user.username
             user_email = user.email
             access_token = str(refresh.access_token)
 
-            print("User authenticated successfully.") 
-            return Response({'message': 'User authenticated successfully', 'username': user_name, 'email': user_email, 'access_token': access_token}, status=status.HTTP_200_OK)
+            return Response({
+                'message': 'User authenticated successfully',
+                'username': user_name,
+                'email': user_email,
+                'access_token': access_token
+            }, status=status.HTTP_200_OK)
         else:
-            print("Invalid credentials.")  
-            return Response({'message': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+            return Response({'message': 'Invalid credentials'}, 
+                        status=status.HTTP_401_UNAUTHORIZED)
     else:
-        print("Method not allowed.")  
         return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
 @api_view(['POST'])
