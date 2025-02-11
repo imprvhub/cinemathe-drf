@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sf',
+    'authentication',
     'corsheaders',
 ]
 
@@ -138,7 +138,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'  
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'sf', 'static'),
+    os.path.join(BASE_DIR, 'authentication', 'static'),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

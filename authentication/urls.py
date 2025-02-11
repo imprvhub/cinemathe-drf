@@ -1,7 +1,6 @@
-# sf/urls.py
 from django.urls import path
 
-from sf.views import index
+from authentication.views import index
 
 
 urlpatterns = [
